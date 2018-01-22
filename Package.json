@@ -1,13 +1,21 @@
 {
   "name": "mormonbot",
-  "version": "1.0.0",
-  "description": "This is a bot to quote any Mormon Specific Scripture.",
-  "main": "index.js",
+  "version": "0.5.0",
+  "description": "This bot can quote any scripture from The Book of Mormon, Doctrine and Covenants and Pearl of Great Price!",
+  "main": "bot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OctoAvenger/MormonBot.git"
+  },
   "author": "Nathan McLaughlin",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OctoAvenger/MormonBot/issues"
+  },
+  "homepage": "https://github.com/OctoAvenger/MormonBot#readme",
   "dependencies": {
     "discord.js": "11.3.0"
   }
