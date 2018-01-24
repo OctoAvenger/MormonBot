@@ -5,10 +5,10 @@ const bot = new Discord.Client();
 const prefix = "-";
 
 //Pulls JSON files to main folder.
-var nicks = JSON.parse(fs.readFileSync("nicks.json"));
-var BOM = JSON.parse(fs.readFileSync("book-of-mormon.json"));
-var DC = JSON.parse(fs.readFileSync("doctrine-and-covenants.json"));
-var PGP = JSON.parse(fs.readFileSync("pearl-of-great-price.json"));
+//var nicks = JSON.parse(fs.readFileSync("nicks.json"));
+var bom = JSON.parse(fs.readFileSync("book-of-mormon.json"));
+var dc = JSON.parse(fs.readFileSync("doctrine-and-covenants.json"));
+var pgp = JSON.parse(fs.readFileSync("pearl-of-great-price.json"));
 
 //Messages and commands that MormonBot can proform.
 client.on("message", (message) => {
@@ -21,8 +21,14 @@ client.on("message", (message) => {
             message.channel.send({ embed });
     }
     //Code for displaying verses.
-    if (message.content.includes("")) {
-        message.channel.send("");
+    if (message.content.includes(bom.books.book.reference)) {
+        message.channel.send("**" + bom.books.book.reference + " - Book of Mormon (BoM)\n\n``` <" + bom.books.book.verse + "> " + bom.books.book.text + "```");
+    }
+    if (message.content.includes(dc.sections.section.reference)) {
+        message.channel.send("**" + dc.sections.section.reference + " - Doctrine and Covenants (D&C)\n\n``` <" + dc.sections.section.verse + "> " + dc.sections.section.text + "```");
+    }
+    if (message.content.includes(pgp.books.book.reference)) {
+        message.channel.send("**" + pgp.books.book.reference + " - Pearl of Great Price (PGP)\n\n``` <" + pgp.books.book.verse + "> " + pgp.books.book.text + "```");
     }
 });
 
