@@ -1,4 +1,4 @@
-//Defines Bot/prefixs and languages used.
+//Defines bot/prefix and languages used.
 const Discord = require("discord.js");
 const fs = require("fs");
 const bot = new Discord.Client();
