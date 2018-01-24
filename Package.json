@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/OctoAvenger/MormonBot#readme",
   "dependencies": {
-    "discord.js": "11.3.0"
+    "discord.js": "11.3.0",
+    "fs": "0.0.1-security"
   }
 }
