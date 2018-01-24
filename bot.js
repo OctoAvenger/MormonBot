@@ -6,7 +6,7 @@ const prefix = "-";
 
 var BoM = JSON.parse(fs.readFileSync("book-of-mormon.json"));
 var DC = JSON.parse(fs.readFileSync("doctrine-and-covenants.json"));
-var PGP = JSON.parse(fs.readFileSync("pearl-of-great-price.json));
+var PGP = JSON.parse(fs.readFileSync("pearl-of-great-price.json"));
 
 client.on("message", (message) => {
   if(message.content == "test") {
