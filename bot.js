@@ -22,13 +22,13 @@ client.on("message", (message) => {
     }
     //Code for displaying verses.
     if (message.content.includes(bom.books.book.reference)) {
-        message.channel.send("**" + bom.books.book.reference + " - Book of Mormon (BoM)\n\n``` <" + bom.books.book.verse + "> " + bom.books.book.text + "```");
+        message.channel.send("**" + bom.books.book.reference + " - Book of Mormon (BoM)**\n\n``` <" + bom.books.book.verse + "> " + bom.books.book.text + "```");
     }
     if (message.content.includes(dc.sections.section.reference)) {
-        message.channel.send("**" + dc.sections.section.reference + " - Doctrine and Covenants (D&C)\n\n``` <" + dc.sections.section.verse + "> " + dc.sections.section.text + "```");
+        message.channel.send("**" + dc.sections.section.reference + " - Doctrine and Covenants (D&C)**\n\n``` <" + dc.sections.section.verse + "> " + dc.sections.section.text + "```");
     }
     if (message.content.includes(pgp.books.book.reference)) {
-        message.channel.send("**" + pgp.books.book.reference + " - Pearl of Great Price (PGP)\n\n``` <" + pgp.books.book.verse + "> " + pgp.books.book.text + "```");
+        message.channel.send("**" + pgp.books.book.reference + " - Pearl of Great Price (PGP)**\n\n``` <" + pgp.books.book.verse + "> " + pgp.books.book.text + "```");
     }
 });
 
