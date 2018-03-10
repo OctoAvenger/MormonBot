@@ -1,4 +1,3 @@
-//Book of Mormon
     "bom": {
         "1nephi": "1 Nephi",
         "1nep": "1 Nephi",
@@ -50,8 +49,6 @@
         "moro": "Moroni",
         "mni": "Moroni"
     },
-
-    //Doctrine and Covenants
     "d&c": {
         "doctrineandcovenants": "Doctrine and Covenants",
         "doctrine&covenants": "Doctrine and Covenants",
@@ -65,8 +62,6 @@
         "dandc": "Doctrine and Covenants",
         "d&c": "Doctrine and Covenants"
     },
-
-    //Pearl of Great Price
     "pgp": {
         "moses": "Moses",
         "mos": "Moses",
